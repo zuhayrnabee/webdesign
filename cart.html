@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | StyleShop</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    
+<!------>
+    
+<body>
+<div class="header">
+    
+    <div class="container">
+        <div class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" width="125px"></a>
+    </div>
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+            <a href="cart.html"><img src="images/cart.png" width="25px" height="25px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+          </div>
+    </div>
+</div>
+
+<!------>
+    
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+
+            <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/image1.png">
+                    <div>
+                        <p>Air Max Shoes</p>
+                        <small>Price: Rs 1999.00</small>
+                        <br>
+                        <a href="emptycart.html">Remove</a>
+                    </div>
+                </div>
+            </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs 1999.00</td>
+            </tr>
+        </table>
+        
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs 1999.00</td>
+                </tr>
+                <tr>
+                    <td>Vat 10%</td>
+                    <td>Rs 199.90</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs 2198.90</td>
+                </tr>
+            </table>
+        </div>
+            <div class="checkout">
+            <a href="comingsoon.html" class="btn">Proceed To Checkout</a>
+            </div>
+    </div>
+    
+<!------>
+    
+    <div class="footer">
+        <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android<br> and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href="https://www.apple.com/app-store/" target="_blank"><img src="images/appstore.png"></a>
+                    <a href="https://play.google.com/store?hl=en&gl=US" target="_blank"><img src="images/playstore.png"></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+        <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                <p>Our Purpose Is To Sustainably<br> Deliver Your Goods And<br> Serve You To Your Satisfaction.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="comingsoon.html">Coupons</a></li>
+                    <li><a href="comingsoon.html">Blog Post</a></li>
+                    <li><a href="comingsoon.html">Return Policy</a></li>
+                    <li><a href="comingsoon.html">Join Affiliate</a></li>
+                    <li><a href="comingsoon.html">Mission Statement</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+            <hr>
+            <p class="copyright">Copyright &#169; 2022 - StyleShop</p>
+            </div>
+    </div>
+    
+<!----->
+    
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight = "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
